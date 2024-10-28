@@ -41,3 +41,7 @@ cards.forEach(card => {
   card.style.transform = 'translateY(50px)';
   observer.observe(card);
 });
+
+window.onload = function() {
+  alert("Mohon maaf atas ketidaknyamanannya website ini belum responsive");
+};
