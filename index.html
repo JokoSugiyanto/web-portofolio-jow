@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+           <a href="index.html"><h1 class="logo">Joko Sugiyanto</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header Section -->
+
+  <!-- Home -->
+<section id="home"> 
+    <div class="container home-flex">
+        <div class="bio">
+            <h2>Hello, I'm Joko Sugiyanto</h2>
+            <p>I am an enthusiastic design student currently pursuing a degree in Information Systems at Institut Teknologi Batam. With a strong background in design principles and creativity, I have a particular interest in creating innovative and engaging design solutions.</p>
+            
+        </div>
+        <div class="profile-picture">
+            <img src="Gambar WhatsApp 2024-10-22 pukul 21.45.40_d025a9c2.jpg" alt="Your Photo">
+        </div>
+    </div>
+</section>
+<!-- End Home -->
+
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a student majoring in Information Systems with a deep interest in UI/UX design and have developed skills through academic projects and freelance work. Equipped with abilities in user research, wireframing, and visual design, I am passionate about creating intuitive and enjoyable user experiences.</p>
+        </div>
+    </section>
+    <!-- End About -->
+
+<!-- Education & Skills Section -->
+<section id="education-skills">
+    <div class="container">
+        <h2 class="skills-title">Education & Skills</h2>
+        <div class="grid-container">
+            <div class="education-list">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>High School </h4>
+                    <p>SMAN 2 Bintan Pesisir, 2019 - 2022</p>
+                </div>
+                <div class="education-item">
+                    <h4>Bachelor's Degree in Information Systems</h4>
+                    <p>Institut Teknologi Batam, 2022 - Present</p>
+                </div>
+            </div>
+            <div class="skills-list">
+                <h3>Skills</h3>
+                <div class="skill-item">
+                    <img src="devicon_photoshop.png" alt="HTML Logo" class="skill-logo"> Adobe Photoshop
+                </div>
+                <div class="skill-item">
+                    <img src="AI Logo.png" alt="CSS Logo" class="skill-logo"> Adobe Ilustrator
+                </div>
+                <div class="skill-item">
+                    <img src="devicon_figma.png" alt="JavaScript Logo" class="skill-logo"> Figma
+                </div>
+                <div class="skill-item">
+                    <img src="devicon_vscode.png" alt="UI/UX Logo" class="skill-logo"> VS Code
+                </div>
+                <div class="skill-item">
+                    <img src="My sql Logo.png" alt="Responsive Design Logo" class="skill-logo"> My SQL
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- End Education & Skills Section -->
+
+
+    <!-- Project -->
+    <section id="projects" class="project-section">
+        <h1 class="section-title">My Projects</h1>
+        <div class="project-grid">
+      
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Mob Bengkel.png" alt="Project 1 Image">
+            </div>
+            <div class="project-info">  
+              <h3>MR.JASA SERVICE</h3>
+              <p class="project-description">The MR Jasa Service app helps users easily find nearby repair shops. Developed by students from Institut Teknologi Batam, it aims to improve access to vehicle repair services quickly and efficiently.</p>
+              <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+          </div>
+      
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Tanda Baca.png" alt="Project 2 Image">
+            </div>
+            <div class="project-info">
+              <h3>TANDA BACA</h3>
+              <p class="project-description">Tanda Baca,a coffee shop in Batam, is inviting the owner to be our client for a campus Web Programming project. We propose developing a QR code-based online ordering website.</p>
+              <a href="https://project-web-chairulaw.vercel.app/" class="project-link" target="_blank">View Project</a>
+            </div>
+          </div>
+      
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Technoshift.png" alt="Project 3 Image">
+            </div>
+            <div class="project-info">
+              <h3>TECHNOSHIFT</h3>
+              <p class="project-description">I served as the chief organizer for the annual event 'Technoshift,' a collaboration between the Information Systems and Engineering Management programs at Institut Teknologi Batam, showcasing elements of technology and engineering.</p>
+              <a href="https://www.instagram.com/technofest.iteba/" class="project-link" target="_blank">View Project</a>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    <!-- End Project -->
+    
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="script.js"></script>
+</body>
+</html>

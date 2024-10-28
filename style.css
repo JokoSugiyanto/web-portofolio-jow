@@ -1,0 +1,437 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+/* Container setup */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.5s ease;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.logo:hover{
+    color: #333;
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+/* Container for Home Section */
+.home-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+/* Left side: Bio */
+.bio {
+    flex: 1;
+    max-width: 600px;
+}
+
+.bio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Right side: Profile Picture */
+.profile-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture img {
+    border-radius: 2rem;
+    max-width: 100%; /* Mengurangi ukuran gambar menjadi 80% dari lebar kontainer */
+    max-height: 400px; /* Atur tinggi maksimum agar tetap proporsional */
+    height: auto; /* Menjaga aspek rasio gambar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect tetap ada */
+}
+
+
+/* Ensure Responsiveness */
+@media screen and (max-width: 768px) {
+    .home-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-top: 20px;
+    }
+
+    .bio h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+/* About Section */
+#about {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+} 
+/* End About */
+
+
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(minmax(300px, 1fr));
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #000;
+    position: relative;
+    animation: fadeIn 1.5s ease;
+  }
+
+/* Education List */
+.education-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills List */
+.skills-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: grid; /* Mengubah menjadi grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Mengatur kolom grid */
+    gap: 10px; /* Jarak antara item grid */
+}
+
+/* Skill Item */
+.skill-item {
+    background-color: #fff;
+    border: 1px solid;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: color 0.3s ease-in-out, transform 0.3s  ease-in-out, background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Memusatkan konten dalam item */
+}
+
+/* Skill Logo */
+.skill-logo {
+    width: 50px; /* Ukuran logo */
+    height: 50px; /* Ukuran logo */
+    margin-right: 15px; /* Jarak antara logo dan teks */
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background-color: #fff;
+}
+
+/* Skill Logo */
+.skill-logo {
+    width: 50px; /* Ukuran logo */
+    height: 50px; /* Ukuran logo */
+    margin-right: 15px; /* Jarak antara logo dan teks */
+}
+
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background-color: #000;
+    color: #fff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* Projects Section */
+  
+  /* Section Title */
+  .section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #000;
+    position: relative;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  /* Project Grid */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 5rem;
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Project Image */
+  .project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.1);
+  }
+  
+  /* Project Info */
+  .project-info {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #333;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Contact Section */
+#contact {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact button {
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
